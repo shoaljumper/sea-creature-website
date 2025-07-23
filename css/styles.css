@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2c3e3f;
+    color: #d4af37;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Navigation */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+/* Main Welcome Section */
+.welcome-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(44, 62, 63, 0.8), rgba(44, 62, 63, 0.8));
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-title {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.mission-section {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.mission-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d4af37;
+    font-weight: normal;
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #b8860b;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d4af37;
+    color: #2c3e3f;
+}
+
+.mission-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Journey Section */
+.journey-section {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.journey-label {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #b8860b;
+}
+
+.journey-title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.journey-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-button {
+    background-color: rgba(52, 73, 85, 0.8);
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.about-button:hover {
+    background-color: #d4af37;
+    color: #2c3e3f;
+}
+
+.journey-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.offerings-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(52, 73, 85, 0.9);
+    border: 1px solid #d4af37;
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Shop Section */
+.shop-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.shop-text h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.shop-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #b8860b;
+    text-align: left;
+}
+
+/* Values Section */
+.values-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.value-item {
+    padding: 30px 20px;
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.value-item p {
+    font-size: 0.95rem;
+    color: #b8860b;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    padding: 60px 20px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #d4af37;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.email-signup {
+    background-color: rgba(212, 175, 55, 0.2);
+    padding: 15px 40px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #b8860b;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+
+    .mission-section,
+    .journey-content,
+    .shop-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mission-text h2,
+    .journey-title,
+    .shop-text h2 {
+        font-size: 2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .shop-text h2 {
+        text-align: center;
+    }
+
+    .shop-text p {
+        text-align: center;
+    }
+
+    .mission-text {
+        text-align: center;
+    }
+}
